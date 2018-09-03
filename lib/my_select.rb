@@ -1,6 +1,5 @@
-def my_select(num) do |num|
-  if num.even?
-    num
+def my_select(num) 
+  
  # your code here!
  
 end

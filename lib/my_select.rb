@@ -12,4 +12,5 @@ end
  # your code here!
  
 my_selectn(num) do |num|
-  select << 
+  if num.even?
+    

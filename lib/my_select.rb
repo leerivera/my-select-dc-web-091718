@@ -1,21 +1,24 @@
-def my_select(collection)
-  my_array = []
-  i = 0 
-  while i < collection.length 
-  my_array.push yield(collection[i])
+nums = [1, 2, 3, 4, 5] 
+
+def my_select(collection) 
+  empty_arr = [] 
+  
+  i=0 
+  while i < collection.length
+  empty_arr.push yield(collection[i]) 
   i += 1 
- end
- my_array
-end
-  
-  
- # your code here!
- 
-my_selectn(num) do |num|
+end 
+
+  empty_arr.compact 
+end 
+
+
+my_select(nums) do |num| 
   if num.even?
-    num
-  end
-end
+    num 
+  end 
+end 
+
 nums = [1, 2, 3, 4, 5] 
 
 def my_select(array) 
@@ -31,6 +34,6 @@ def my_select(array)
   select 
 end 
 
-my_select(nums) do |nums| 
+my_select(nums) do |num| 
   num.even? 
-end 
+end

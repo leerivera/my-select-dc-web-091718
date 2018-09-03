@@ -1,3 +1,3 @@
-def my_select(collection)
+def my_select(num)
  # your code here!
 end
